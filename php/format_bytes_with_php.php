@@ -1,3 +1,5 @@
+<?php
+ 
  /*
 Format bytes with PHP – B, KB, MB, GB, TB, PB, EB, ZB, YB converter
 
@@ -13,7 +15,6 @@ Yottabyte (YB)
 Function takes three parameter: (bytes mandatory, unit optional, decimals optional)
 PHP byteFormat function for formatting bytes
 */
-<?php
  
   function byteFormat($bytes, $unit = "", $decimals = 2) {
         $units = array('B' => 0, 'KB' => 1, 'MB' => 2, 'GB' => 3, 'TB' => 4, 
@@ -42,8 +43,7 @@ PHP byteFormat function for formatting bytes
         return sprintf('%.' . $decimals . 'f '.$unit, $value);
   }
  
-?>
-/*
+ /*
 Example usage
 echo byteFormat(4096, "B") ."\n";
 echo byteFormat(8, "B", 2) . "\n";
@@ -65,3 +65,5 @@ Prints
 0.0009765625 TB
 0.000977 PB
 */
+ 
+?>
